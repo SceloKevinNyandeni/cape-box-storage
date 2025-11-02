@@ -4,44 +4,46 @@ import { Check } from "lucide-react";
 const Pricing = () => {
   const plans = [
     {
-      name: "Starter Box",
-      description: "Store up to 2 boxes",
-      price: "From R150",
+      name: "Boxes & Suitcases",
+      description: "Perfect for clothes, books & bedding",
+      price: "R150",
       period: "/month",
       features: [
-        "Up to 2 boxes",
-        "Free pickup",
-        "Secure storage",
-        "Free return delivery",
+        "1 large box: R150/month",
+        "1 Month (2 boxes): R250",
+        "2 Months (2 boxes): R350",
+        "3 Months Holiday Special: R550",
+        "Semester (6 months): R900",
+        "Student Special: R400 (2 boxes, 3 months)",
+      ],
+      popular: true,
+      note: "Sturdy Storage Boxes: Only R15 each",
+    },
+    {
+      name: "Bar Fridges",
+      description: "Small student fridges storage",
+      price: "R350",
+      period: "/month",
+      features: [
+        "1 Month: R350",
+        "2 Months: R500",
+        "3 Months Holiday Special: R700",
+        "Semester (6 months): R1,200",
+        "Free pickup & delivery",
         "24/7 security",
       ],
       popular: false,
     },
     {
-      name: "Mid Pack",
-      description: "Store up to 4 boxes + delivery",
-      price: "From R250",
-      period: "/month",
+      name: "Combo Deals",
+      description: "Save with our bundle offers",
+      price: "R750",
+      period: "/2 months",
       features: [
-        "Up to 4 boxes",
+        "Fridge + 1 Box: R750 (2 months)",
+        "Best value combo",
         "Free pickup & delivery",
         "Secure storage",
-        "Priority support",
-        "24/7 security",
-        "Flexible dates",
-      ],
-      popular: true,
-    },
-    {
-      name: "Holiday Hold",
-      description: "Ideal for long breaks (3 months+)",
-      price: "From R400",
-      period: "/3 months",
-      features: [
-        "Up to 6 boxes",
-        "Free pickup & delivery",
-        "Extended storage",
-        "Best value for holidays",
         "24/7 security",
         "Priority support",
       ],
@@ -116,6 +118,12 @@ const Pricing = () => {
               >
                 Get Started
               </Button>
+
+              {plan.note && (
+                <p className="mt-4 text-sm text-center text-muted-foreground font-medium">
+                  💡 {plan.note}
+                </p>
+              )}
             </div>
           ))}
         </div>

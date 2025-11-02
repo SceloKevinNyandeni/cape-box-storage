@@ -20,7 +20,7 @@ const Contact = () => {
     
     // Create WhatsApp message
     const whatsappMessage = `*New Booking Request*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Student Residence:* ${formData.residence}%0A*Pickup Date:* ${formData.pickupDate}%0A*Message:* ${formData.message}`;
-    const whatsappUrl = `https://wa.me/27682791313?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/27764233202?text=${whatsappMessage}`;
     
     window.open(whatsappUrl, '_blank');
     
@@ -73,7 +73,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground mb-1">Phone</div>
-                    <div className="text-muted-foreground">068 279 1313</div>
+                    <div className="text-muted-foreground">076 423 3202</div>
                   </div>
                 </a>
 
@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
 
                 <a
-                  href="https://wa.me/27682791313"
+                  href="https://wa.me/27764233202"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 p-4 rounded-xl bg-accent/10 hover:bg-accent/20 transition-colors group border-2 border-accent"

@@ -37,12 +37,11 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <button
-            onClick={() => scrollToSection("hero")}
-            className="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+          <img src="Logo-removebg-preview.png"
+            className="w-24 h-auto hover:opacity-80 transition-opacity"
           >
-            Cape Box Storage
-          </button>
+            </img>
+          
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

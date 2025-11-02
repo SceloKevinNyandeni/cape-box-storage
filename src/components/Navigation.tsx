@@ -37,10 +37,11 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <img src="Logo-removebg-preview.png"
-            className="w-24 h-auto hover:opacity-80 transition-opacity"
-          >
-            </img>
+          <img
+  src={`${process.env.PUBLIC_URL}/Logo-removebg-preview.png`}
+  className="w-24 h-auto hover:opacity-80 transition-opacity"
+  alt="Cape Box Storage Logo"
+/>
           
 
           {/* Desktop Navigation */}
